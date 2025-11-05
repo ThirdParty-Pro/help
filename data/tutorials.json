@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "How to Use the Homepage Extension",
+    "file": "tutorial1.md",
+    "tags": ["setup", "extension"]
+  },
+  {
+    "id": 2,
+    "title": "Adding Custom Backgrounds",
+    "file": "tutorial2.md",
+    "tags": ["customization"]
+  }
+]

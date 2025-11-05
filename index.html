@@ -1,145 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HomePage v2025.10</title>
-<style>
-  body {
-    background: #333;
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    height: fit-content;
-    width: 300px;
-    transition: background-image 2s ease-in-out;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  }
-    .info-bar {
-    background: #00000059;
-    padding: 15px 0;
-  }
-  .open-tab-btn {
-    display: block;
-    width: 90%;
-    margin:auto;
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #0078ff, #00d4ff);
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 120, 255, 0.3);
-  }
-  .open-tab-btn:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(135deg, #005de0, #00a3d6);
-    box-shadow: 0 6px 12px rgba(0, 120, 255, 0.4);
-  }
-.info-bar-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    width: fit-content;
-    margin: 20px auto;
-    animation: ani3 6s ease-in-out infinite;
-}
-.bar-Profile {
-    background: #00000088;
-    height: 130px;
-    width: 130px;
-    border-radius: 20px;
-    cursor: grab;
-}
-.bar-Profile-Name {
-    font-size: 22px;
-    color: #fff;
-    background: #00000099;
-    width: fit-content;
-    margin: 5px auto;
-    padding: 2px 7px;
-    border-radius: 10px;
-}
-.bar-Profile:hover {
-    transform: scaleX(-1);
-}
-.info-bar a {
-    color: #fff;
-}
-.info-bar a:hover {
-    color: #f44234;
-}
-.info-bar-p {
-    color: #ffffff;
-    margin: 3px 5px;
-    position: relative;
-    text-align: left;
-    width: -webkit-fill-available;
-}
-.info-bar-p a {
-    position: absolute;
-    right: 0;
-    top: -6px;
-    display: flex;
-    align-items: center;
-}
-.info-bar-p a::after {
-    content: url(assets/Links/openin.svg);
-    filter:invert()
-}
-.info-links {
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    gap: 10px;
-}
-.links {
-    height: 50px;
-    width: 50px;
-}
-.links img {
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-}
-.terms {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #000000;
-    margin: 3px 0;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomePage Form</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="info-bar">
-  <!-- <button id="openTab" class="open-tab-btn">🚀 Open New Tab</button> -->
-        <div class="info-bar-profile">
-            <img src="src/assets/icon.png" class="bar-Profile">
-            <h1 class="bar-Profile-Name">HomePage <sup style="font-size: 10px; font-weight: 600;">v2025.10</sup></h1>
-        </div>
-        <p class="info-bar-p">Follow Me
-        <span><a class="bar-p-a" href="/main/info.html" target="_blank">More Info</a></span></p>
-        <div class="info-links">
-            <a class="links" href="https://www.facebook.com/rm4814591" target="_blank"><img src="src/assets/Links/FB.png" title="Facebook"></a>
-            <a class="links" href="https://www.instagram.com/@rm4814591" target="_blank"><img src="src/assets/Links/insta.png" title="Instagram"></a>
-            <a class="links" href="https://pk.linkedin.com/in/mramzanch" target="_blank"><img src="src/assets/Links/LnK.png" title="LinkedIn"></a>
-            <a class="links" href="https://www.github.com/megamind-solutions" target="_blank"><img src="src/assets/Links/GitHub.png" title="GitHub"></a>
-        </div>
-        <hr style="width: auto;background: #000000;height: 3px;border: none;">
-        <div class="terms">
-            <a href="info.html#Policy" target="_blank">Privacy Policy</a>
-            <a href="info.html#license" target="_blank">License</a>
-            <a href="info.html#colabers" target="_blank">Collabrators</a>
-        </div>
-    </div>
-  <script src="https://github.com/ThirdParty-Pro/HomePage/blob/main/src/page.js"></script>
+  <header>
+    <h1 id="site-title"></h1>
+    <nav>
+      <a href="./index.">Home</a>
+      <a href="./tutorials.html">Tutorials</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main-content"></main>
+
+  <footer>© 2025 HomePage Form | All rights reversed by MicroResearch
+  Corporation&reg;</footer>
+
+  <script src="assets/js/loadContent.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
